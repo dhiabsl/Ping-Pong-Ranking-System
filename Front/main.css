@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+ *{
+     margin: 0;
+     padding:0;
+     box-sizing:border-box;
+ }
+ /* Style the navigation bar */
+ .navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  } 
+
+/* Rank 1 styles */
+.Rank1{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background: linear-gradient(to right, #0f0c29, #fff, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    text-align: center;
+}
+#player>img{
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0;
+}
+#player>h1{
+    font-size: 80px;
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+}
+.elos{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+}
+.diamond,.plat,.gold{
+    margin: 20px;
+    padding: 20px;
+}
+.diamond,.plat,.gold{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    padding: 3rem;
+
+}
+.elos>.diamond{
+    background-color: rgb(0, 132, 255);
+}
+.elos>.plat{
+    background-color: rgb(0, 255, 191);
+}
+.elos>.gold{
+    background-color: gold;
+}
+
+/* Elo palyers list styles */
+.ordered {
+    counter-reset: li;
+    list-style: none;
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+.ordered a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #ffffff;
+    color: rgb(41, 40, 40);
+    text-decoration: none;
+    border-radius: .3em;
+    transition: .2s ease-out;
+  }
+
+  .ordered a:hover { background: #f5bcc1; }
+  .ordered a:hover:before { transform: rotate(360deg); }
+  .ordered a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: gold;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+  }  

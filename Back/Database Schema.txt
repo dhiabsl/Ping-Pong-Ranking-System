@@ -1,0 +1,3 @@
+products : productID - Product - Image-Source - Price
+clients : clientID - fullname - phone
+cart : cartID - dateandtime - ClientID - ProductID 

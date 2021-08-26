@@ -1,0 +1,7 @@
+POST http://127.0.0.1:3000/CRUD/AddUsers
+Content-Type: application/json
+
+{
+    "username":"The Boss Bsl",
+    "password":"NeverSerrender123"
+}

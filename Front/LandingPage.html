@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping-Pong Masters</title>
+    <link rel="icon" href="./img/trophy.jpg">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/GetDATA.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <a class="active" href="./LandingPage.html"><i class="fa fa-fw fa-home"></i> Arena</a>
+        <a href="#"><i class="fa fa-fw fa-search"></i> Inscription</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Reservation</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+    </div>
+    </header>
+    <main>
+        <div class="Rank1">
+            <div id="player">
+            </div>
+        </div>
+        <div class="elos">
+            <div class="diamond">
+                <h1>DIAMOND </h1>
+                <ol class="ordered" id="diamonds">
+                    <!-- Dimaond players goes here from server -->
+                </ol>
+            </div>
+            <div class="plat">
+                <h1>PLATINIUM </h1>
+                <ol class="ordered" id="plat">
+                    <!-- Platinium players goes here from server -->
+                </ol>
+
+            </div>
+            <div class="gold">
+                <h1>GOLD </h1>
+                <ol class="ordered" id="gold">
+                    <!-- Gold players goes here from server -->
+                </ol>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
